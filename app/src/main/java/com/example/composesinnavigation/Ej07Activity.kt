@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -31,10 +32,11 @@ class Ej07Activity : ComponentActivity() {
 fun AppView07() {
     Column(
         Modifier
+            //.fillMaxSize()
             .background(Color.Blue)
             .absolutePadding(top = 20.dp, bottom = 80.dp)
             .padding(horizontal = 20.dp)
-            .background(Color.Green),
+            .background(Color(0xFF8BC34A)),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -45,6 +47,15 @@ fun AppView07() {
             Box(Modifier.fillMaxWidth()) {
                 Text(text = "mundo", Modifier.align(Alignment.CenterEnd))
             }
+        }
+        Row() {
+            Text(text = "hola")
+            Text(
+                text = "mundo",
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.End,
+            )
+
         }
         Box(Modifier.fillMaxWidth()) {
             Text(text = "hola", Modifier.align(Alignment.CenterStart))
