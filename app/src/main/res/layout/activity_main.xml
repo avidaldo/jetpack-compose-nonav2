@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej01" />
+
+        <Button
+            android:id="@+id/button02a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej02a" />
+
+        <Button
+            android:id="@+id/button02b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej02b" />
+
+        <Button
+            android:id="@+id/button02c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej02c" />
+
+        <Button
+            android:id="@+id/button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej03" />
+
+        <Button
+            android:id="@+id/button04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej04" />
+
+        <Button
+            android:id="@+id/button05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej05" />
+
+        <Button
+            android:id="@+id/button06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej06" />
+
+        <Button
+            android:id="@+id/button07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej07" />
+
+        <Button
+            android:id="@+id/button08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej08" />
+
+        <Button
+            android:id="@+id/button09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ej09" />
+
+    </LinearLayout>
+
+</ScrollView>

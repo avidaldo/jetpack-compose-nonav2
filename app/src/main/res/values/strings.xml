@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ComposeSinNavigation</string>
+    <string name="jetpack_compose">JetPack Compose</string>
+    <string name="hola_coma">"Hola, "</string>
+    <string name="hola_placeholder">"Hola, %1$s"</string>
+    <string name="hola_mundo">Hola mundo</string>
+</resources>
