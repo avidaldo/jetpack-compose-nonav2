@@ -14,7 +14,7 @@ class Ej02aActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            ColumnaBasica(saludarA = getString(R.string.jetpack_compose))
+            ColumnaBasica()
         }
     }
 

@@ -27,7 +27,7 @@ class Ej02bActivity : ComponentActivity() {
 }
 
 @Composable
-fun ColumnaBasica(
+fun ColumnaBasica(  // La función se llama igual que en el Ej02a, pero con argumento.
     saludarA: String
 ) {
     Column(
