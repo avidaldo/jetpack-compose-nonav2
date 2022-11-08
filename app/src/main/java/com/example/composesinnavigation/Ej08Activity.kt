@@ -10,11 +10,13 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -70,8 +72,9 @@ fun TextConvertidoEnButtonMedianteModifier(text: String = "Button") {
                     .makeText(context, "Texto pulsado", Toast.LENGTH_SHORT)
                     .show()
             }
+            .clip(shape = RoundedCornerShape(30.dp))
+            .border(width = 2.dp, color = Color.Blue, shape = RoundedCornerShape(30.dp))
             .background(Color.Cyan)
-            .border(width = 2.dp, color = Color.Blue)
             .padding(
                 horizontal = 16.dp, vertical = 8.dp
             )
