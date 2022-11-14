@@ -45,7 +45,7 @@ fun ColumnaBasica(  // La función se llama igual que en el Ej02a, pero con argu
 @Preview(showSystemUi = true) // Mostramos la pantalla completa
 @Composable
 fun DefaultPreviewEj02b() {
-    DosTextosEnColumna(saludarA = "JetPack Compose")
+    ColumnaBasica(saludarA = "JetPack Compose")
 }
 
 /*
