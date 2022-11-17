@@ -5,12 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.End
+import androidx.compose.ui.Alignment.Companion.Top
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
@@ -23,7 +25,7 @@ class Ej02cActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            DosTextosEnColumna(saludarA = stringResource(R.string.jetpack_compose))
+            DosTextosEnColumna(saludarA = getString(R.string.jetpack_compose))
         }
     }
 
@@ -35,12 +37,12 @@ fun DosTextosEnColumna(
     saludo: String = stringResource(R.string.hola_coma),  // (1)
     saludarA: String,
 ) {
-    Column(
+    Row(
         modifier = Modifier
             .fillMaxSize() // Para ocupar toda la pantalla
             .background(Color.Green)
             .padding(30.dp),   // El orden en que concatenamos los modificadores es relevante
-        horizontalAlignment = Alignment.CenterHorizontally, // (3)
+        verticalAlignment = Alignment.CenterVertically, // (3)
     ) {
         /* El atributo content, que recibe una lambda, se debe sacar de los paréntesis */
         Text(text = saludo)
@@ -48,7 +50,7 @@ fun DosTextosEnColumna(
         Text(text = saludarA,
             modifier = Modifier
                 .background(Color.Yellow)
-                .align(End))  // (4)
+                .align(Top))  // (4)
     }
 }
 

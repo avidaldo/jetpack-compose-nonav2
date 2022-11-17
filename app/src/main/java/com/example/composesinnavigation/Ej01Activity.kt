@@ -19,7 +19,7 @@ class Ej01Activity : ComponentActivity() {  /* ComponentActivity tiene todas las
 
         // Ya no utilizaremos setContentView ya que ya no referenciaremos ningún layout en XML
         setContent {
-            HolaMundoSimple(saludarA = "Jetpack Compose")  // (1)
+            HolaMundoSimple(saludarA = "Jetpack Come")  // (1)
         }
     }
 
@@ -44,7 +44,7 @@ setContent. */
 @Preview
 @Composable
 fun DefaultPreviewEj01() {
-    HolaMundoSimple(saludarA = "Jetpack Compose")
+    HolaMundoSimple("Jetpack Cose")
 }
 
 

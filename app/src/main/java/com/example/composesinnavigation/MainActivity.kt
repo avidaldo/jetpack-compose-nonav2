@@ -59,9 +59,9 @@ superior en la jerarquía. */
             startActivity(Intent(this,
                 Ej08Activity::class.java))
         }
-        /*     binding.button09.setOnClickListener { startActivity(Intent(this, Ej09Activity::class.java)) }
-            binding.buttonEjercicio01.setOnClickListener { startActivity(Intent(this, Ejercicio01Activity::class.java)) }
-             binding.buttonEjercicio02.setOnClickListener { startActivity(Intent(this, Ejercicio02Activity::class.java)) }
-             binding.buttonEjercicio03.setOnClickListener { startActivity(Intent(this, Ejercicio03Activity::class.java)) }*/
+             binding.button09.setOnClickListener { startActivity(Intent(this, Ej09Activity::class.java)) }
+        /*   binding.buttonEjercicio01.setOnClickListener { startActivity(Intent(this, Ejercicio01Activity::class.java)) }
+            binding.buttonEjercicio02.setOnClickListener { startActivity(Intent(this, Ejercicio02Activity::class.java)) }
+            binding.buttonEjercicio03.setOnClickListener { startActivity(Intent(this, Ejercicio03Activity::class.java)) }*/
     }
 }
