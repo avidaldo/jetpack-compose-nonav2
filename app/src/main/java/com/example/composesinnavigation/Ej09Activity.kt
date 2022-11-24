@@ -30,20 +30,20 @@ class Ej09Activity : ComponentActivity() {
 @Preview(showSystemUi = true)
 @Composable
 private fun ContenidoEj09() {
-    val configuration = LocalConfiguration.current
-    when (configuration.orientation) {
-        Configuration.ORIENTATION_LANDSCAPE -> {
-            Row() {
-                Text("Landscape", Modifier.weight(1f))
-                CajaConCosas(Modifier.weight(2f).fillMaxSize())
-            }
-        }
-        else -> {
+    when (LocalConfiguration.current.orientation) {
+        Configuration.ORIENTATION_PORTRAIT -> {
             Column() {
                 Text("Portrait", Modifier.weight(1f))
                 CajaConCosas(Modifier.weight(2f).fillMaxWidth())
             }
         }
+        Configuration.ORIENTATION_LANDSCAPE -> {
+            Row() {
+                Text("Landscape", Modifier.weight(1f))
+                CajaConCosas(Modifier.weight(2f).fillMaxSize()) // Vale "Size" por estar detrás del peso
+            }
+        }
+        else -> throw RuntimeException()
     }
 }
 
